@@ -29,31 +29,18 @@ document.getElementById("age").innerHTML = age;
 // condizioni per l IF
 condition1 = age < 18;
 condition2 = age >= 65;
-// defiinsco il prezzo totale = (kilomentri * prezzoAlKilometro)
+// definisco il prezzo totale = (kilomentri * prezzoAlKilometro)
 totalPrice = kilNumber * kilPrice;
 
 // ciclo IF
 if (condition1) {
   totalPrice -= totalPrice * underDiscount;
-  roundPrice = totalPrice.toFixed(2);
-  alert(
-    `Il prezzo del tuo biglietto è ridotto del ${
-      underDiscount * 100
-    }%, quindi è: ${roundPrice}€`
-  );
 } else if (condition2) {
   totalPrice -= totalPrice * overDiscount;
-  roundPrice = totalPrice.toFixed(2);
-  alert(
-    `Il prezzo del tuo biglietto è ridotto del ${
-      overDiscount * 100
-    }%, quindi è: ${roundPrice}€`
-  );
 } else {
-  roundPrice = totalPrice.toFixed(2);
-  alert(`Il prezzo del tuo biglietto è: ${roundPrice}€`);
-  // alert("Il prezzo è: " + prezzo);
 }
+
+roundPrice = totalPrice.toFixed(2);
 
 // inserisco il prezzo arrotondato nel contenitore #price
 document.getElementById("price").innerHTML = roundPrice;

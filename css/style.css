@@ -21,19 +21,18 @@ body {
   align-items: center;
 }
 
-.container {
-  width: 800px;
+.biglietto {
+  width: 80%;
+  min-width: 400px;
   height: 600px;
-  background-color: aquamarine;
-  background-image: url("http://s1.picswalls.com/wallpapers/2014/08/16/train-backgrounds_072800178_211.jpg");
-  background-size: cover;
-  background-position: center;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  background-image: url("http://s1.picswalls.com/wallpapers/2014/08/16/train-backgrounds_072800178_211.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
   position: relative;
 }
 
@@ -59,31 +58,26 @@ body {
   width: 50%;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 h1 {
-  font-size: 50px;
-  /* background-color: black; */
-  color: black;
+  font-size: 40px;
+  color: #222;
   padding: 5px;
-  position: relative;
-
-  z-index: 10;
   text-align: center;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 24px;
   font-weight: 400;
-  color: white;
-  position: relative;
-  z-index: 10;
+  color: rgb(214, 212, 212);
   text-transform: capitalize;
 }
 
 span {
   font-size: 32px;
   font-weight: 800;
-  position: relative;
-  z-index: 10;
 }
