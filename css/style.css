@@ -9,6 +9,10 @@
   display: table;
 }
 
+body {
+  background-color: #333;
+}
+
 .container-ext {
   height: 100vh;
   width: 100%;
@@ -19,8 +23,11 @@
 
 .container {
   width: 800px;
-  height: 300px;
+  height: 600px;
   background-color: aquamarine;
+  background-image: url("http://s1.picswalls.com/wallpapers/2014/08/16/train-backgrounds_072800178_211.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -29,7 +36,7 @@
 }
 
 h1 {
-  background-color: #5d5db6;
+  background-color: #5d5db696;
   color: white;
   padding: 10px;
 }
@@ -37,5 +44,11 @@ h1 {
 p {
   font-size: 28px;
   font-weight: 600;
-  color: #333;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+span {
+  font-size: 32px;
+  font-weight: 800;
 }
