@@ -8,7 +8,8 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65 */
 
 // dichiaro le variabili
-var kilNumber,
+var nome,
+  kilNumber,
   age,
   kilPrice = 0.21,
   underDiscount = 0.2,
@@ -19,6 +20,7 @@ var kilNumber,
   roundPrice;
 
 // assegnazioned delle variabili
+nome = prompt("Inserisci il tuo nome:");
 kilNumber = parseInt(
   prompt("Inserisci il numero di km che intendi percorrere:")
 );
@@ -43,4 +45,5 @@ if (condition1) {
 roundPrice = totalPrice.toFixed(2);
 
 // inserisco il prezzo arrotondato nel contenitore #price
+document.getElementById("text").innerHTML = nome + " il tuo viaggio";
 document.getElementById("price").innerHTML = roundPrice;
