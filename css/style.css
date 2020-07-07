@@ -33,22 +33,39 @@ body {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px;
+  position: relative;
+}
+
+.layover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 h1 {
-  background-color: #5d5db696;
+  font-size: 40px;
+  background-color: black;
   color: white;
   padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  z-index: 10;
 }
 
 p {
   font-size: 28px;
   font-weight: 600;
   color: white;
-  background-color: rgba(0, 0, 0, 0.527);
+
+  position: relative;
+  z-index: 10;
 }
 
 span {
   font-size: 32px;
   font-weight: 800;
+  position: relative;
+  z-index: 10;
 }

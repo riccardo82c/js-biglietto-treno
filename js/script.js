@@ -19,18 +19,21 @@ var kilNumber,
   roundPrice;
 
 // assegnazioned delle variabili
-kilNumber = prompt("Inserisci il numero di km che intendi percorrere:");
-age = prompt("Inserisci la tua età:");
+kilNumber = parseInt(
+  prompt("Inserisci il numero di km che intendi percorrere:")
+);
+age = parseInt(prompt("Inserisci la tua età:"));
+// definisco i due contenitore in HTML
 document.getElementById("kil").innerHTML = kilNumber;
 document.getElementById("age").innerHTML = age;
-
+// condizioni per l IF
 condition1 = age < 18;
 condition2 = age > 65;
+// defiinsco il prezzo totale = (kilomentri * prezzoAlKilometro)
 totalPrice = kilNumber * kilPrice;
 
-// condizione
+// ciclo IF
 if (condition1) {
-  // alert("minorenne");
   totalPrice -= totalPrice * underDiscount;
   roundPrice = totalPrice.toFixed(2);
   alert(
@@ -39,7 +42,6 @@ if (condition1) {
     }%, quindi è: ${roundPrice}€`
   );
 } else if (condition2) {
-  // alert("over");
   totalPrice -= totalPrice * overDiscount;
   roundPrice = totalPrice.toFixed(2);
   alert(
@@ -50,6 +52,8 @@ if (condition1) {
 } else {
   roundPrice = totalPrice.toFixed(2);
   alert(`Il prezzo del tuo biglietto è: ${roundPrice}€`);
+  // alert("Il prezzo è: " + prezzo);
 }
 
+// inserisco il prezzo arrotondato nel contenitore #price
 document.getElementById("price").innerHTML = roundPrice;
