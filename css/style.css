@@ -11,6 +11,7 @@
 
 body {
   background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-ext {
@@ -24,7 +25,7 @@ body {
 .biglietto {
   width: 80%;
   min-width: 400px;
-  height: 600px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,6 +48,7 @@ body {
 
 .titolo {
   width: 50%;
+
   display: flex;
   justify-content: center;
 }
@@ -62,22 +64,25 @@ body {
   z-index: 10;
 }
 
-h1 {
-  font-size: 40px;
-  color: #222;
+.text {
+  font-size: 6vw;
+  font-weight: 800;
+  background-color: white;
+  color: black;
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
+  mix-blend-mode: screen;
 }
 
 p {
-  font-size: 24px;
+  font-size: 2.5vw;
   font-weight: 400;
   color: rgb(214, 212, 212);
   text-transform: capitalize;
 }
 
 span {
-  font-size: 32px;
+  font-size: 3vw;
   font-weight: 800;
 }
