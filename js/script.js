@@ -28,7 +28,7 @@ document.getElementById("kil").innerHTML = kilNumber;
 document.getElementById("age").innerHTML = age;
 // condizioni per l IF
 condition1 = age < 18;
-condition2 = age > 65;
+condition2 = age >= 65;
 // defiinsco il prezzo totale = (kilomentri * prezzoAlKilometro)
 totalPrice = kilNumber * kilPrice;
 

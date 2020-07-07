@@ -28,34 +28,51 @@ body {
   background-image: url("http://s1.picswalls.com/wallpapers/2014/08/16/train-backgrounds_072800178_211.jpg");
   background-size: cover;
   background-position: center;
+
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
+
   position: relative;
 }
 
 .layover {
   position: absolute;
-  width: 100%;
+  top: 0;
+  right: 0;
+  width: 48%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+}
+
+.titolo {
+  width: 50%;
+  margin: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 34px;
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 5px;
   position: relative;
-  border-radius: 10px;
+
   z-index: 10;
+  text-align: center;
 }
 
 p {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
   color: white;
 
@@ -68,4 +85,5 @@ span {
   font-weight: 800;
   position: relative;
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.514);
 }
