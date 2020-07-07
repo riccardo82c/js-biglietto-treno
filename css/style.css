@@ -30,10 +30,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: url("http://s1.picswalls.com/wallpapers/2014/08/16/train-backgrounds_072800178_211.jpg");
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdqwalls.com%2Fdownload%2Ftrain-rail-5k-gv-1920x1080.jpg&f=1&nofb=1");
   background-size: cover;
   background-position: center;
-  border: 1px solid white;
+
   position: relative;
 }
 
@@ -43,7 +43,7 @@ body {
   right: 0;
   width: 50%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .titolo {
