@@ -15,11 +15,15 @@ var kilNumber,
   overDiscount = 0.4,
   condition1,
   condition2,
-  totalPrice;
+  totalPrice,
+  roundPrice;
 
 // assegnazioned delle variabili
 kilNumber = prompt("Inserisci il numero di km che intendi percorrere:");
 age = prompt("Inserisci la tua età:");
+document.getElementById("kil").innerHTML = kilNumber;
+document.getElementById("age").innerHTML = age;
+
 condition1 = age < 18;
 condition2 = age > 65;
 totalPrice = kilNumber * kilPrice;
@@ -30,23 +34,22 @@ if (condition1) {
   totalPrice -= totalPrice * underDiscount;
   roundPrice = totalPrice.toFixed(2);
   alert(
-    "Il prezzo del tuo biglietto è ridotto del " +
-      underDiscount * 100 +
-      "%, quindi è: " +
-      roundPrice +
-      "€"
+    `Il prezzo del tuo biglietto è ridotto del ${
+      underDiscount * 100
+    }%, quindi è: ${roundPrice}€`
   );
 } else if (condition2) {
   // alert("over");
   totalPrice -= totalPrice * overDiscount;
   roundPrice = totalPrice.toFixed(2);
   alert(
-    "Il prezzo del tuo biglietto è ridotto del " +
-      overDiscount * 100 +
-      "%, quindi è: " +
-      roundPrice +
-      "€"
+    `Il prezzo del tuo biglietto è ridotto del ${
+      overDiscount * 100
+    }%, quindi è: ${roundPrice}€`
   );
 } else {
-  alert("Il prezzo del tuo biglietto è: " + totalPrice.toFixed(2) + "€");
+  roundPrice = totalPrice.toFixed(2);
+  alert(`Il prezzo del tuo biglietto è: ${roundPrice}€`);
 }
+
+document.getElementById("price").innerHTML = roundPrice;
