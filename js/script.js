@@ -8,6 +8,7 @@ va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65 */
 
 // dichiaro le variabili
+
 var nome,
   kilNumber,
   age,
