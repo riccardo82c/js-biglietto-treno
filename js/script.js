@@ -12,8 +12,6 @@ var nome,
   kilNumber,
   age,
   kilPrice = 0.21,
-  underDiscount = 0.2,
-  overDiscount = 0.4,
   condition1,
   condition2,
   totalPrice,
@@ -36,8 +34,11 @@ totalPrice = kilNumber * kilPrice;
 
 // ciclo IF
 if (condition1) {
+  /* le variabili di sconto le metto nell'if, vengono create solo all'occorrenza */
+  var underDiscount = 0.2;
   totalPrice -= totalPrice * underDiscount;
 } else if (condition2) {
+  var overDiscount = 0.4;
   totalPrice -= totalPrice * overDiscount;
 } else {
 }
